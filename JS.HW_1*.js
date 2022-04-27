@@ -32,7 +32,7 @@ let age_3 = 60;
 // checkAge(19);
 // checkAge("fere");
 
-// 2*:
+// 2*:---------------------------------------------------------------------------------------------
 // Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 
 
@@ -58,35 +58,60 @@ let age_3 = 60;
 // checkAge(17);
 // checkAge("fere");
 
-// 3**:
+// 3**: ---------------------------------------------------------------------------------------------
 // Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 
 
-
-
-const checkAge = function (age){
+// const checkAge = function (age){
 
     // age = Number(age)
     // if (!isNaN(age)) {
     // if (Number(age)) {
    
+//     if (+age) {
+
+//         if (age < age_2) {
+             
+//               console.log("You don’t have access cause your age is " + age + " It’s less then");
+//          } else if (age >=  age_2 && age <  age_3){
+                
+//                 console.log("Welcome !");
+//          } else if (age  >= age_3 ){
+                
+//                 console.log("Keep calm and look Culture channel");
+//          } else {
+//             console.log("Technical work"); 
+//          } 
+//     } else { console.log("Not integer value");}
+            
+// }
+
+// checkAge ("22")
+// checkAge ("qweer")
+
+// 4***:-----------------------------------------------------------------
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
+
+
+const checkAge = function (age){
+   
     if (+age) {
 
         if (age < age_2) {
              
-              console.log("You don’t have access cause your age is " + age + " It’s less then");
+            alert("You don’t have access cause your age is " + age + " It’s less then");
          } else if (age >=  age_2 && age <  age_3){
                 
-                console.log("Welcome !");
+            alert("Welcome !");
          } else if (age  >= age_3 ){
                 
-                console.log("Keep calm and look Culture channel");
+            alert("Keep calm and look Culture channel");
          } else {
-            console.log("Technical work"); 
+            alert("Technical work"); 
          } 
-    } else { console.log("Not integer value");}
-            
+    } else { alert("Not integer value");}
 }
 
-checkAge ("22")
-checkAge ("qweer")
+let agePrompt = prompt ("Enter age");
+checkAge(agePrompt);
