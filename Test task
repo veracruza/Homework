@@ -1,0 +1,19 @@
+// Task
+// Make a functions that takes a string and makes it look “cool” by replacing some letters with another symbols
+// For example we can replace “a” or “A” with @ and get “с@t” instead of “cat”
+
+
+const chars = {'a':'@','B':'6','E':'3'};
+let makeItCool = 'BravE';
+makeItCool = makeItCool.replace(/[aBE]/g, m => chars[m]);
+console.log(makeItCool.toLowerCase());
+
+const chars2 = {'N':'№','o':'0','H':'#'};
+let makeItCool2 = 'HoNor';
+makeItCool2 = makeItCool2.replace(/[HNo]/g, m => chars2[m]);
+console.log(makeItCool2.toLowerCase());
+
+const chars3 = {'N':'№','o':'0','H':'#','E':'3','s':'$','t':'+','A':'@' };
+let makeItCool3 = 'HoNor And REspEct';
+makeItCool3 = makeItCool3.replace(/[HNoEstA]/g, m => chars3[m]);
+console.log(makeItCool3.toLowerCase());
